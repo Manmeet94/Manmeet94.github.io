@@ -11,26 +11,26 @@ checkOutBtn.addEventListener("click", function(){
 
 const plusBtn1 = document.getElementById("plusBtn1");
 plusBtn1.addEventListener("click", function(){
-      const inputAmount = parseFloat(document.getElementById("input1").value);
-      const inputAmountNumber = inputAmount + 1;
-      document.getElementById("input1").value = inputAmountNumber;
+      const userAmount = parseFloat(document.getElementById("input1").value);
+      const userAmountNumber = userAmount + 1;
+      document.getElementById("input1").value = userAmountNumber;
       const unitPrice = parseFloat(document.getElementById("unitPrice1").innerText) + 1129;
 
       document.getElementById("unitPrice1").innerText = unitPrice;
 
-      const subTotal = document.getElementById("subTotal").innerText;
-      const subTotalNumber = parseFloat(subTotal);
-      const subTotalValue = subTotalNumber + 1129;
-      document.getElementById("subTotal").innerText = subTotalValue;
+      const Payable = document.getElementById("Payable").innerText;
+      const PayableNumber = parseFloat(Payable);
+      const PayableValue = PayableNumber + 1129;
+      document.getElementById("Payable").innerText = PayableValue;
 
 
-      const taxAmount = parseFloat(document.getElementById("taxAmount").innerText);
+      const totalTax = parseFloat(document.getElementById("totalTax").innerText);
     
-      const updatedTax = subTotalValue*0.15;
-      document.getElementById("taxAmount").innerText = updatedTax;
+      const updatedTax = PayableValue*0.15;
+      document.getElementById("totalTax").innerText = updatedTax;
 
 
-      document.getElementById("netTotal").innerText = subTotalValue+updatedTax;
+      document.getElementById("netTotal").innerText = PayableValue+updatedTax;
 
 
     });
@@ -38,25 +38,25 @@ plusBtn1.addEventListener("click", function(){
 
 const minusBtn1 = document.getElementById("minusBtn1");
         minusBtn1.addEventListener("click", function(){
-              const inputAmount = parseFloat(document.getElementById("input1").value);
-              if ( inputAmount == 0) {}
+              const userAmount = parseFloat(document.getElementById("input1").value);
+              if ( userAmount == 0) {}
               else{
-              const inputAmountNumber = inputAmount - 1;
-              document.getElementById("input1").value = inputAmountNumber;
+              const userAmountNumber = userAmount - 1;
+              document.getElementById("input1").value = userAmountNumber;
               const unitPrice = parseFloat(document.getElementById("unitPrice1").innerText) - 1129;
               document.getElementById("unitPrice1").innerText = unitPrice;
 
-              const subTotal = document.getElementById("subTotal").innerText;
-              const subTotalNumber = parseFloat(subTotal);
-              const subTotalValue = subTotalNumber - 1129;
-              document.getElementById("subTotal").innerText = subTotalValue;
+              const Payable = document.getElementById("Payable").innerText;
+              const PayableNumber = parseFloat(Payable);
+              const PayableValue = PayableNumber - 1129;
+              document.getElementById("Payable").innerText = PayableValue;
 
-              const taxAmount = parseFloat(document.getElementById("taxAmount").innerText);
+              const totalTax = parseFloat(document.getElementById("totalTax").innerText);
               
-              const updatedTax = subTotalValue*0.15;
-              document.getElementById("taxAmount").innerText = updatedTax;
+              const updatedTax = PayableValue*0.15;
+              document.getElementById("totalTax").innerText = updatedTax;
         
-              document.getElementById("netTotal").innerText = subTotalValue+updatedTax;
+              document.getElementById("netTotal").innerText = PayableValue+updatedTax;
 
               }
             });
@@ -64,45 +64,45 @@ const minusBtn1 = document.getElementById("minusBtn1");
 
 const plusBtn2 = document.getElementById("plusBtn2");
 plusBtn2.addEventListener("click", function(){
-      const inputAmount = parseFloat(document.getElementById("input2").value);
-      const inputAmountNumber = inputAmount + 1;
-      document.getElementById("input2").value = inputAmountNumber;
+      const userAmount = parseFloat(document.getElementById("input2").value);
+      const userAmountNumber = userAmount + 1;
+      document.getElementById("input2").value = userAmountNumber;
       const unitPrice = parseFloat(document.getElementById("unitPrice2").innerText) + 1189;
       document.getElementById("unitPrice2").innerText = unitPrice;
 
-      const subTotal = document.getElementById("subTotal").innerText;
-      const subTotalNumber = parseFloat(subTotal);
-      const subTotalValue = subTotalNumber + 1189;
-      document.getElementById("subTotal").innerText = subTotalValue;
+      const Payable = document.getElementById("Payable").innerText;
+      const PayableNumber = parseFloat(Payable);
+      const PayableValue = PayableNumber + 1189;
+      document.getElementById("Payable").innerText = PayableValue;
 
-      const taxAmount = parseFloat(document.getElementById("taxAmount").innerText);
-      const updatedTax = subTotalValue*0.15;
-      document.getElementById("taxAmount").innerText = updatedTax;
+      const totalTax = parseFloat(document.getElementById("totalTax").innerText);
+      const updatedTax = PayableValue*0.15;
+      document.getElementById("totalTax").innerText = updatedTax;
 
-      document.getElementById("netTotal").innerText = subTotalValue+updatedTax;
+      document.getElementById("netTotal").innerText = PayableValue+updatedTax;
 
     });
 
 const minusBtn2 = document.getElementById("minusBtn2");
         minusBtn2.addEventListener("click", function(){
-              const inputAmount = parseFloat(document.getElementById("input2").value);
-              if (inputAmount == 0 ) {}
+              const userAmount = parseFloat(document.getElementById("input2").value);
+              if (userAmount == 0 ) {}
               else {
-              const inputAmountNumber = inputAmount - 1;
-              document.getElementById("input2").value = inputAmountNumber;
+              const userAmountNumber = userAmount - 1;
+              document.getElementById("input2").value = userAmountNumber;
               const unitPrice = parseFloat(document.getElementById("unitPrice2").innerText) - 1189;
               document.getElementById("unitPrice2").innerText = unitPrice;
 
-              const subTotal = document.getElementById("subTotal").innerText;
-              const subTotalNumber = parseFloat(subTotal);
-              const subTotalValue = subTotalNumber - 1189;
-              document.getElementById("subTotal").innerText = subTotalValue;
+              const Payable = document.getElementById("Payable").innerText;
+              const PayableNumber = parseFloat(Payable);
+              const PayableValue = PayableNumber - 1189;
+              document.getElementById("Payable").innerText = PayableValue;
 
-              const taxAmount = parseFloat(document.getElementById("taxAmount").innerText);
-              const updatedTax = subTotalValue*0.15;
-              document.getElementById("taxAmount").innerText = updatedTax;
+              const totalTax = parseFloat(document.getElementById("totalTax").innerText);
+              const updatedTax = PayableValue*0.15;
+              document.getElementById("totalTax").innerText = updatedTax;
 
-              document.getElementById("netTotal").innerText = subTotalValue+updatedTax;
+              document.getElementById("netTotal").innerText = PayableValue+updatedTax;
 
               }
             });
